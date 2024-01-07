@@ -34,10 +34,6 @@ public class FishBookItem extends Item implements PolymerItem {
     public int getPolymerCustomModelData(ItemStack itemStack, @Nullable ServerPlayerEntity player) {return PolymerTextures.MODELS.get(this).value();}
 
     @Override
-    public Text getName(ItemStack stack) {
-        return Text.translatable("Ichthyologist's Journal");
-    }
-    @Override
     public Item getPolymerItem(ItemStack itemStack, @Nullable ServerPlayerEntity player) {
         return Items.WRITTEN_BOOK;
     }
@@ -75,197 +71,197 @@ public class FishBookItem extends Item implements PolymerItem {
 
         builder.addPage(
                 //Text.translatable("books.fishing101.fish_book.intro")
-                Text.literal("   October 12, 1878\n"),
-                Text.literal("My name is Finn Benthos. " +
-                        "The pages of this journal shall document the intriguing marine creatures I encounter throughout my voyage into the unknown. " +
-                        "My aim is to unravel the mysteries concealed within the watery realm.")
+                Text.literal("   Октябрь 12, 1878\n"),
+                Text.literal("Меня зовут Финн Бентос. " +
+                        "На страницах этого дневника будут запечатлены интригующие морские существа, с которыми я сталкиваюсь во время своего путешествия в неизвестность. " +
+                        "Моя цель - разгадать тайны, скрытые в водном царстве.")
         );
         builder.addPage(
-                Text.literal("   October 13, 1878\n\n"),
-                Text.literal("Carp\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Cypriniformes\n"+
-                        "- Distribution: Freshwater\n"+
-                        "- Can be smoked")
+                Text.literal("   Октябрь 13, 1878\n\n"),
+                Text.literal("Карп\n").formatted(Formatting.BOLD),
+                Text.literal( "- Отряд: Карпообразные\n"+
+                        "- Распространение: Пресноводный\n"+
+                        "- Может быть прокопчен")
         );
         builder.addPage(
-                Text.literal("   October 13, 1878\n\n"),
-                Text.literal("Deformed Carp\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Cypriniformes\n" +
-                        "- Distribution: Freshwater\n" +
-                        "- Can be smoked")
+                Text.literal("   Октябрь 13, 1878\n\n"),
+                Text.literal("Деформированный карп\n").formatted(Formatting.BOLD),
+                Text.literal("- Отряд: Карпообразные\n" +
+                        "- Распространение: Пресноводный\n" +
+                        "- Может быть прокопчен")
         );
         builder.addPage(
-                Text.literal("   October 14, 1878\n\n"),
-                Text.literal("Luminous Carp\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Cypriniformes\n" +
-                        "- Distribution: Freshwater; Nocturnal\n" +
-                        "- Can be smoked\n" +
-                        "- Special effects: Luminousness")
+                Text.literal("   Октябрь 14, 1878\n\n"),
+                Text.literal("Светящийся карп\n").formatted(Formatting.BOLD),
+                Text.literal( "- Отряд: Карпообразные\n" +
+                        "- Распространение: Пресноводный; Nocturnal\n" +
+                        "- Может быть прокопчен\n" +
+                        "- Специальные эффекты: Светится")
         );
         builder.addPage(
-                Text.literal("   October 14, 1878\n\n"),
-                Text.literal("Catfish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Siluriformes\n" +
-                        "- Distribution: Freshwater\n"+
-                        "- Can be smoked")
+                Text.literal("   Октябрь 14, 1878\n\n"),
+                Text.literal("Сом\n").formatted(Formatting.BOLD),
+                Text.literal("- Отряд: Силуриформные\n" +
+                        "- Распространение: Пресноводный\n"+
+                        "- Может быть прокопчен")
         );
         builder.addPage(
-                Text.literal("   October 16, 1878\n\n"),
-                Text.literal("Muddy Catfish\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Siluriformes\n" +
-                        "- Distribution: Murky swamp waters\n" +
-                        "- Can be smoked")
+                Text.literal("   Октябрь 16, 1878\n\n"),
+                Text.literal("Грязный карп\n").formatted(Formatting.BOLD),
+                Text.literal( "- Отряд: Силуриформные\n" +
+                        "- Распространение: Мутные болотные воды\n" +
+                        "- Может быть прокопчен")
         );
         builder.addPage(
-                Text.literal("   October 24, 1878\n\n"),
-                Text.literal("Tropical Catfish\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Siluriformes\n" +
-                        "- Distribution: Tropical waters\n" +
-                        "- Can be smoked")
+                Text.literal("   Октябрь 24, 1878\n\n"),
+                Text.literal("Тропический сом\n").formatted(Formatting.BOLD),
+                Text.literal( "- Отряд: Силуриформные\n" +
+                        "- Распространение: Тропические воды\n" +
+                        "- Может быть прокопчен")
         );
         builder.addPage(
-                Text.literal("   November 8, 1878\n\n"),
-                Text.literal("Divine Catfish\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Siluriformes\n" +
-                        "- Distribution: Freshwater; rare, but much more common when raining\n" +
-                        "- Can be smoked\n" +
+                Text.literal("   Ноябрь 8, 1878\n\n"),
+                Text.literal("Божественный сом\n").formatted(Formatting.BOLD),
+                Text.literal( "- Отряд: Силуриформные\n" +
+                        "- Распространение: Пресноводный; редкий, но гораздо более распространенный во время дождя\n" +
+                        "- Может быть прокопчен\n" +
                         "- Special effects: Ascension")
         );
         builder.addPage(
-                Text.literal("   November 22, 1878\n\n"),
-                Text.literal("Mackerel\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Perciformes\n" +
-                        "- Distribution: Saltwater\n"+
-                        "- Can be smoked")
+                Text.literal("   Ноябрь 22, 1878\n\n"),
+                Text.literal("Скумбрия\n").formatted(Formatting.BOLD),
+                Text.literal( "- Отряд: Перциформные\n" +
+                        "- Распространение: Солёная вода\n"+
+                        "- Может быть прокопчен")
         );
         builder.addPage(
-                Text.literal("   November 27, 1878\n\n"),
-                Text.literal("Luminous Mackerel\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Perciformes\n" +
-                        "- Distribution: Saltwater; Nocturnal\n" +
-                        "- Can be smoked\n" +
-                        "- Special effects: Luminousness")
+                Text.literal("   Ноябрь 27, 1878\n\n"),
+                Text.literal("Светящаяся скумбрия\n").formatted(Formatting.BOLD),
+                Text.literal( "- Отряд: Перциформные\n" +
+                        "- Распространение: Солёная вод; Ночной\n" +
+                        "- Может быть прокопчен\n" +
+                        "- Специальные эффекты: Светится")
         );
         builder.addPage(
-                Text.literal("   December 1, 1878\n\n"),
-                Text.literal("Mangrove Jack\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Perciformes\n" +
-                        "- Distribution: Mangrove waters\n" +
-                        "- Can be smoked")
+                Text.literal("   Декабрь 1, 1878\n\n"),
+                Text.literal("Мангровый каранк\n").formatted(Formatting.BOLD),
+                Text.literal( "- Отряд: Перциформные\n" +
+                        "- Распространение: Мангровые воды\n" +
+                        "- Может быть прокопчен")
         );
         builder.addPage(
-                Text.literal("   December 7, 1878\n\n"),
-                Text.literal("Shrimp\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Decapoda\n" +
-                        "- Distribution: Thermophilic; Saltwater\n"+
-                        "- Can be smoked")
+                Text.literal("   Декабрь 7, 1878\n\n"),
+                Text.literal("Креветка\n").formatted(Formatting.BOLD),
+                Text.literal( "- Отряд: Десятиногие\n" +
+                        "- Распространение: Теплолюбивый; Морские воды\n"+
+                        "- Может быть прокопчен")
         );
         builder.addPage(
-                Text.literal("   December 14, 1878\n\n"),
-                Text.literal("Luminous Shrimp\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Decapoda\n" +
-                        "- Distribution: thermophilic; Saltwater; Nocturnal\n"+
-                        "- Can be smoked\n"+
-                        "- Special effects: Luminousness")
+                Text.literal("   Декабрь 14, 1878\n\n"),
+                Text.literal("Светящаяся креветка\n").formatted(Formatting.BOLD),
+                Text.literal("- Отряд: Десятиногие\n" +
+                        "- Распространение: Теплолюбивый; Морские воды; Ночной\n"+
+                        "- Может быть прокопчен\n"+
+                        "- Специальные эффекты: Светится")
         );
         builder.addPage(
-                Text.literal("   December 15, 1878\n\n"),
-                Text.literal("Jellyfish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Semaeostomeae\n" +
-                        "- Distribution: Saltwater\n"+
-                        "- Potential allergic reaction")
+                Text.literal("   Декабрь 15, 1878\n\n"),
+                Text.literal("Медуза\n").formatted(Formatting.BOLD),
+                Text.literal("- Порядок: Семеостомовые\n" +
+                        "- Распространение: Морские воды\n"+
+                        "- Возможна аллергическая реакция")
         );
         builder.addPage(
-                Text.literal("   January 7, 1879\n\n"),
-                Text.literal("Divine Jellyfish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Semaeostomeae\n" +
-                        "- Distribution: Saltwater; rare, but much more common when raining\n"+
+                Text.literal("   Январь 7, 1879\n\n"),
+                Text.literal("Божественная медуза\n").formatted(Formatting.BOLD),
+                Text.literal("- Порядок: Семеостомовые\n" +
+                        "- Распространение: Морские воды; редкий, но гораздо более распространенный во время дождя\n"+
                         "- Special effects: Ascension")
         );
         builder.addPage(
-                Text.literal("   January 9, 1879\n\n"),
-                Text.literal("Anglerfish\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Lophiiformes\n" +
-                        "- Distribution: Absolute darkness in deepest of caves; more common in the Ancient Cities\n" +
-                        "- Can be smoked\n" +
-                        "- Often causes nausea")
+                Text.literal("   Январь 9, 1879\n\n"),
+                Text.literal("Рыба-удильщик\n").formatted(Formatting.BOLD),
+                Text.literal( "- Отряд: Лопоухие\n" +
+                        "- Распространение: Абсолютная темнота в самых глубоких пещерах; чаще встречается в древних городах\n" +
+                        "- Может быть прокопчен\n" +
+                        "- Часто вызывает тошноту")
         );
         builder.addPage(
-                Text.literal("   March 30, 1879\n\n"),
-                Text.literal("Red Koi\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Cypriniformes\n" +
-                        "- Distribution: Cherry groves\n" +
-                        "- Can be smoked" )
+                Text.literal("   Март 30, 1879\n\n"),
+                Text.literal("Красный кои\n").formatted(Formatting.BOLD),
+                Text.literal( "- Отряд: Карпообразные\n" +
+                        "- Распространение: Вишнёвые леса\n" +
+                        "- Может быть прокопчен" )
         );
         builder.addPage(
-                Text.literal("   April 2, 1879\n\n"),
-                Text.literal("Yellow Koi\n").formatted(Formatting.BOLD),
-                Text.literal( "- Order: Cypriniformes\n" +
-                        "- Distribution: Cherry groves\n" +
-                        "- Can be smoked" )
+                Text.literal("   Апрель 2, 1879\n\n"),
+                Text.literal("Жёлтый кои\n").formatted(Formatting.BOLD),
+                Text.literal( "- Отряд: Карпообразные\n" +
+                        "- Распространение: Вишнёвые леса\n" +
+                        "- Может быть прокопчен" )
         );
         builder.addPage(
-                Text.literal("   June 19, 1879\n\n"),
-                Text.literal("Thunderfin\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Fulmeniformes\n" +
-                        "- Distribution: Electrified waters\n" +
-                        "- It appears to have some unusual attributes when charged with copper" )
+                Text.literal("   Июнь 19, 1879\n\n"),
+                Text.literal("Грозовик\n").formatted(Formatting.BOLD),
+                Text.literal("- Отряд: Фульмениформные\n" +
+                        "- Распространение: Наэлектризованные воды\n" +
+                        "- При зарядке медью он, по-видимому, обладает некоторыми необычными свойствами" )
         );
         builder.addPage(
-                Text.literal("   July 25, 1879\n\n"),
-                Text.literal("Starfish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Paxillosida\n" +
-                        "- Distribution: Warm oceans and beaches\n" +
-                        "- Makes a great shashlik" )
+                Text.literal("   Илю 25, 1879\n\n"),
+                Text.literal("Морская звезда\n").formatted(Formatting.BOLD),
+                Text.literal("- Отряд: Паксиллозида\n" +
+                        "- Распространение: Тёплые океаны и пляжи\n" +
+                        "- Получается отличный шашлыкk" )
         );
         builder.addPage(
-                Text.literal("   July 13, 1879\n\n"),
-                Text.literal("Ice Cod\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Gadiformes\n" +
-                        "- Distribution: Found under glaciers\n" +
-                        "- It's REALLY cold" )
+                Text.literal("   Июль 13, 1879\n\n"),
+                Text.literal("Ледяная треска\n").formatted(Formatting.BOLD),
+                Text.literal("- Отряд: Гадеобразные\n" +
+                        "- Распространение: Найден под ледниками\n" +
+                        "- Она ОЧЕНЬ холодная" )
         );
         builder.addPage(
-                Text.literal("   July 19, 1879\n\n"),
-                Text.literal("Solarfish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Unknown\n" +
-                        "- Distribution: Found on sunny days, in the highest sections of the country\n" +
-                        "- Tastes funny" )
+                Text.literal("   Июль 19, 1879\n\n"),
+                Text.literal("Солнечная рыба\n").formatted(Formatting.BOLD),
+                Text.literal("- Отряд: Неизвестно\n" +
+                        "- Распространение: Встречается в солнечные дни, в самых высокогорных районах страны\n" +
+                        "- Странный вкус" )
         );
         builder.addPage(
-                Text.literal("   August 23, 1879\n\n"),
-                Text.literal("Pandafish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Unknown\n" +
-                        "- Distribution: Found in bamboo jungle\n" +
-                        "- Tastes funny" )
+                Text.literal("   Август 23, 1879\n\n"),
+                Text.literal("Рыба-панда\n").formatted(Formatting.BOLD),
+                Text.literal("- Отряд: Неизвестно\n" +
+                        "- Распространение: Найдена в бамбуковых джунглях\n" +
+                        "- Странный вкус" )
         );
         builder.addPage(
-                Text.literal("   September 15, 1879\n\n"),
-                Text.literal("Witchfish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Unknown\n" +
-                        "- Distribution: Found in mushroom populated areas\n" +
-                        "- Tastes funny" )
+                Text.literal("   Сентябрь 15, 1879\n\n"),
+                Text.literal("Рыба-ведьма\n").formatted(Formatting.BOLD),
+                Text.literal("- Отряд: Неизвестно\n" +
+                        "- Распространение: Встречается в районах, населенных грибами\n" +
+                        "- Странный вкус" )
         );
         builder.addPage(
-                Text.literal("   November 9, 1879\n\n"),
-                Text.literal("Flowerfish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Unknown\n" +
-                        "- Distribution: Found in flower forests\n" +
-                        "- Tastes funny" )
+                Text.literal("   Ноябрь 9, 1879\n\n"),
+                Text.literal("Рыба-цветок\n").formatted(Formatting.BOLD),
+                Text.literal("- Отряд: Неизвестно\n" +
+                        "- Распространение: Наёдена в цветочных лесах\n" +
+                        "- Странный вкус" )
         );
         builder.addPage(
-                Text.literal("   July XX, 19XX\n\n"),
-                Text.literal("End Jellyfish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Semaeostomeae\n" +
-                        "- Distribution: Good question. Where, the heck, am I?\n"+
-                        "- Potential allergic reaction")
+                Text.literal("   Июль XX, 19XX\n\n"),
+                Text.literal("Эндер-медуза\n").formatted(Formatting.BOLD),
+                Text.literal("- Порядок: Семеостомовые\n" +
+                        "- Распространение: Хороший вопрос. Где, чёрт возьми, я?\n"+
+                        "- Потенциальная аллергическая реакция")
         );
         builder.addPage(
-                Text.literal("   July XX, 19XX\n\n"),
-                Text.literal("End Starfish\n").formatted(Formatting.BOLD),
-                Text.literal("- Order: Paxillosida\n" +
-                        "- Distribution: I'm starting to get worried...\n" +
-                        "- I don't know if it's edible, but I'm not risking it" )
+                Text.literal("   Июль XX, 19XX\n\n"),
+                Text.literal("Эндер-звезда\n").formatted(Formatting.BOLD),
+                Text.literal("- Отряд: Паксиллозида\n" +
+                        "- Распространение: Я начинаю беспокоиться...\n" +
+                        "- Я не знаю, съедобно ли это, но я не буду рисковать" )
         );
 
         IndexGui.book = builder.asStack();

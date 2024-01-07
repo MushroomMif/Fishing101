@@ -34,10 +34,6 @@ public class MealBookItem extends Item implements PolymerItem {
     public int getPolymerCustomModelData(ItemStack itemStack, @Nullable ServerPlayerEntity player) {return PolymerTextures.MODELS.get(this).value();}
 
     @Override
-    public Text getName(ItemStack stack) {
-        return Text.translatable("Johnny's Cook Book");
-    }
-    @Override
     public Item getPolymerItem(ItemStack itemStack, @Nullable ServerPlayerEntity player) {
         return Items.WRITTEN_BOOK;
     }
