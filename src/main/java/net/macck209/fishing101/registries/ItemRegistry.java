@@ -1,6 +1,8 @@
 package net.macck209.fishing101.registries;
 
+import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.macck209.fishing101.Fishing101Initializer;
 import net.macck209.fishing101.items.FishBookItem;
 import net.macck209.fishing101.items.MealBookItem;
@@ -15,10 +17,13 @@ import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 
 public class ItemRegistry {
@@ -46,6 +51,8 @@ public class ItemRegistry {
             Blocks.ORANGE_CONCRETE_POWDER,
             Blocks.YELLOW_CONCRETE_POWDER
     );
+
+    private static final Set<Item> fishingItems = new HashSet<>();
 
 
     //--------------------------------------------------
@@ -384,9 +391,17 @@ public class ItemRegistry {
     public static Item registerItem(String path, Item item) {
         Registry.register(Registries.ITEM, new Identifier(Fishing101Initializer.MOD_ID, path), item);
         PolymerTextures.requestModel(new Identifier(Fishing101Initializer.MOD_ID, "item/" + path), item);
+        fishingItems.add(item);
         return item;
     }
 
     public static void register() {
+        ItemGroup group = FabricItemGroup.builder()
+                .displayName(Text.literal("Рыбалка 101"))
+                .icon(RED_KOI::getDefaultStack)
+                .entries((context, entries) -> fishingItems.forEach(entries::add))
+                .build();
+
+        PolymerItemGroupUtils.registerPolymerItemGroup(new Identifier(Fishing101Initializer.MOD_ID), group);
     }
 }

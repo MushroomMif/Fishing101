@@ -22,6 +22,7 @@
   "item.fishing101.smoked_mangrove_jack": "Копчёный грязный сом",
   "item.fishing101.smoked_ordinary_shrimp": "Копчёная креветка",
   "item.fishing101.smoked_luminous_shrimp": "Копчёная светящаяся креветка",
+  "item.fishing101.smoked_catfish": "Копчёный сом",
 
   "item.fishing101.anglerfish": "Рыба-удильщик",
   "item.fishing101.smoked_anglerfish": "Копчёная рыба-удильщик",
@@ -33,7 +34,7 @@
   "item.fishing101.end_starfish": "Эндер-звезда",
   "item.fishing101.end_starfish_shashlik": "Шашлык из эндер-звезды",
   "item.fishing101.ice_cod": "Ледяная треска",
-  "item.fishing101.noodles": "Noodles",
+  "item.fishing101.noodles": "Лапша",
   "item.fishing101.purple_pasta": "Фиолетовая паста",
   "item.fishing101.red_koi": "Красный кои",
   "item.fishing101.rice": "Рис",
